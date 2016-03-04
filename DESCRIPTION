@@ -1,0 +1,10 @@
+Package: bridgeClient
+Type: Package
+Title: Sage Bridge API
+Version: 0.1
+Date: 2015-08-23
+Author: Brian M. Bot
+Maintainer: Brian M. Bot <bot.brian@gmail.com>
+Imports: methods,utils,RCurl,RJSONIO
+Description: Allowing access to the Bridge APIs within R
+License: GPL

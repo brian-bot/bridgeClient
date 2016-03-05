@@ -2,6 +2,7 @@
 
 #### Authenticate
 ```r
+require(bridgeClient)
 bridgeLogin(email='myEmail@awesome.com', password='password', study='studyName')
 ```
 

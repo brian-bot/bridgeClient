@@ -1,8 +1,8 @@
-## bridgeClient Quickstart
+## bridger Quickstart
 
 #### Authenticate
 ```r
-require(bridgeClient)
+require(bridger)
 bridgeLogin(email='myEmail@awesome.com', password='password', study='studyName')
 ```
 

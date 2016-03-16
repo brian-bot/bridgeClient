@@ -10,7 +10,7 @@ kCertBundle <- "certificateBundle/cacert.pem"
   .setBridgeCache("httpheader", character())
   .setBridgeCache("bridgeEndpoint", "https://webservices.sagebridge.org/")
   .setBridgeCache("Accept", "application/json")
-  .setBridgeCache("User-Agent", "R")
+  .setBridgeCache("User-Agent", .userAgent())
   .setBridgeCache("Content-Type", "text/json")
   .setBridgeCache("low.speed.time", 60)
   .setBridgeCache("low.speed.limit", 1)
@@ -21,3 +21,6 @@ kCertBundle <- "certificateBundle/cacert.pem"
   .setBridgeCache("cainfo", file.path(libname, pkgname, kCertBundle))
 }
 
+.userAgent <- function(){
+  return(paste("bridger", strsplit(utils::packageDescription("bridger", fields="Version"), ".", fixed=T)[[1]][1], sep="/"))
+}

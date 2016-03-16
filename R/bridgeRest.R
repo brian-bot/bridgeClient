@@ -16,13 +16,13 @@ uriToUrl <- function(uri, endpoint){
 bridgeRestGET <- function(uri, endpoint = .getBridgeCache("bridgeEndpoint"), .opts=.getBridgeCache("opts"), httpheader=.getBridgeCache("httpheader"), ...){
   url <- uriToUrl(uri, endpoint)
   
-  .getBridgeJSON(url, .opts=.opts, httpheader=httpheader, ...)
+  .getBridgeURL(url, .opts=.opts, httpheader=httpheader, ...)
 }
 
 ## POST
 bridgeRestPOST<-function(uri, body, endpoint = .getBridgeCache("bridgeEndpoint"), .opts=.getBridgeCache("opts"), httpheader=.getBridgeCache("httpheader"), ...){
   url <- uriToUrl(uri, endpoint)
   
-  .getBridgeJSON(url, postfields=body, customrequest="POST", .opts=.opts, httpheader=httpheader, ...)
+  .getBridgeURL(url, postfields=body, customrequest="POST", .opts=.opts, httpheader=httpheader, ...)
 } 
 

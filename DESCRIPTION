@@ -1,10 +1,10 @@
 Package: bridger
 Type: Package
 Title: Sage Bridge API
-Version: 0.1
-Date: 2015-08-23
+Version: 1.0
+Date: 2016-03-16
 Author: Brian M. Bot
 Maintainer: Brian M. Bot <bot.brian@gmail.com>
 Imports: methods,utils,RCurl,rjson
 Description: Allowing access to the Bridge APIs within R
-License: GPL
+License: GPL-3

@@ -9,3 +9,8 @@ setClass(
   representation = representation(env = "environment"),
   prototype = prototype(env = new.env(parent=emptyenv()))
 )
+
+setClass(
+  Class="Config", 
+  representation=list(data="list")
+)

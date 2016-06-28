@@ -11,7 +11,7 @@ kCertBundle <- "certificateBundle/cacert.pem"
   .setBridgeCache("bridgeEndpoint", "https://webservices.sagebridge.org/")
   .setBridgeCache("Accept", "application/json")
   .setBridgeCache("User-Agent", .userAgent())
-  .setBridgeCache("Content-Type", "text/json")
+  .setBridgeCache("Content-Type", "application/json")
   .setBridgeCache("low.speed.time", 60)
   .setBridgeCache("low.speed.limit", 1)
   .setBridgeCache("connecttimeout", 300)
